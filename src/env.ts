@@ -16,7 +16,7 @@ export const defaultEnv = {
     // 0-2
     APITemperature: 0.6,
     continuousDialogue: true,
-    model: "gpt-3.5" as SimpleModel
+    model: "gpt-4o-mini" as SimpleModel
   },
   CLIENT_DEFAULT_MESSAGE: ` 
 - 本网站仅作为项目演示，已内置3个120美金的Key轮询使用，长期使用请自行部署，简单成本低，可联系客服：Andy_8023。
@@ -26,15 +26,14 @@ export const defaultEnv = {
 - 联系客服网站密码，微信：Andy_8023
 `,
   CLIENT_MAX_INPUT_TOKENS: {
-    "gpt-3.5": 16 * 1000,
-    "gpt-4": 32 * 1000
+    "gpt-4o": 128 * 1000,
+    "gpt-4o-mini": 128 * 1000
   } as Record<SimpleModel, number>,
   OPENAI_API_BASE_URL: "api.openai.com",
   OPENAI_API_KEY: "",
   TIMEOUT: 30000,
   PASSWORD: "",
   SEND_KEY: "",
-  SEND_CHANNEL: 9,
   NO_GFW: false
 }
 
